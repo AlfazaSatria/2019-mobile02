@@ -1,47 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:layout_margin="10dp"
-	android:orientation="vertical"
-	tools:context=".MainActivity">
+	android:orientation="vertical">
 
 	<TextView
-		android:text="@string/app_name"
-		android:textSize="32sp"
-		android:textStyle="bold"
-		android:textAlignment="center"
-		android:layout_margin="10dp"
+		android:id="@+id/textView"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:text="Tebak Angka"
+		android:layout_margin="10dp"
+		android:textStyle="bold"
+		android:textSize="32sp"
 		/>
 
 	<EditText
-		android:id="@+id/number_input"
+		android:id="@+id/etAngka"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_margin="10dp"
-		android:hint="@string/input_hint"
-		android:inputType="numberSigned"
-		/>
+		android:layout_marginTop="25dp"
+		android:ems="10"
+		android:inputType="number" />
 
 	<Button
-		android:id="@+id/guess_button"
-		android:layout_width="match_parent"
+		android:id="@+id/btnTebak"
+		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_margin="10dp"
-		android:text="@string/guess"
-		android:onClick="handleGuess"
-		/>
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="25dp"
+		android:text="Tebak Angka" />
 
 	<Button
-		android:id="@+id/reset_button"
-		android:layout_width="match_parent"
+		android:id="@+id/btnReset"
+		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_margin="10dp"
-		android:text="@string/reset"
-		android:onClick="handleReset"
-		/>
-
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="25dp"
+		android:text="Reset" />
 </LinearLayout>
+
+
